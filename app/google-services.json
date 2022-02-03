@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126868417472",
+    "project_id": "chatsat-c6e1f",
+    "storage_bucket": "chatsat-c6e1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126868417472:android:900101f7ffa4dbbdfef625",
+        "android_client_info": {
+          "package_name": "com.example.chatsat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126868417472-74vjq8ef0bqvep91eb6nt19s6en91j8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDizQARNCYl97ZujypLC6UErQMofTmotUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126868417472-74vjq8ef0bqvep91eb6nt19s6en91j8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

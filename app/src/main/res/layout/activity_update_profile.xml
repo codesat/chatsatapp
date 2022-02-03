@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpdateProfileActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#789456"
+        android:layout_marginTop="0dp"
+        android:id="@+id/updatetoolbar"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backbtnupdateprofile"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/backicon"
+                android:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backbtnupdateprofile"
+                android:textColor="@color/white"
+                android:id="@+id/updateprofactivty"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/getusername"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getnewuserimage"
+        android:layout_below="@id/updatetoolbar"
+        android:layout_margin="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="130dp"
+        android:layout_marginLeft="80dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/profuserimageview"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--
+            android:inputType="textCapWords"
+            this line capitalize the first letter of the word/name here
+
+    -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your name here"
+        android:layout_centerInParent="true"
+        android:id="@+id/getnewusername"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/getnewuserimage"
+        android:layout_marginRight="70dp"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/getnewusername"
+        android:id="@+id/savenewprofbtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:text="Save Profile"
+        android:layout_marginTop="20dp"
+        android:background="#456467"
+        android:paddingRight="40dp"
+        />
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:id="@+id/updateprogbar"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savenewprofbtn"/>
+
+</RelativeLayout>

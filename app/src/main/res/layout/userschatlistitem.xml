@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="-5dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satish Sahu"
+            android:id="@+id/txtusername"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cardviewofuser"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status display"
+            android:id="@+id/userstatus"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/cardviewofuser"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/txtusername"
+            android:textColor="@color/purple_500"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_above="@+id/setprofusername"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/cardviewofuser"
+            app:cardCornerRadius="55dp"
+            android:layout_alignParentLeft="true"
+
+        >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/userchatlistimg"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:background="#a6a6a6"
+            android:backgroundTint="#a6a6a6"
+            android:layout_below="@id/cardviewofuser"
+            android:layout_toRightOf="@id/cardviewofuser"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

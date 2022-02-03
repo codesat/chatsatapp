@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--Yah jitne bhi chao menu items declare kardo-->
+    <!--aur drawable se triple vertical dot ka bhi drawable mein rakh lo for menu-->
+    <item android:id="@+id/profile"
+        android:title="Profile"/>
+    <item android:id="@+id/setting"
+        android:title="Setting"/>
+</menu>

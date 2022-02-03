@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetProfileActivity">
+    <!--
+
+   "?attr/actionBarSize"
+   by this line we set the standard toolbar height
+
+   -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#789456"
+        android:layout_marginTop="0dp"
+        android:id="@+id/toolbarofviewprof"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/backicon"
+                android:background="@android:color/transparent"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:id="@+id/backbtnofviewprof"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Profile"
+                android:layout_toRightOf="@id/backbtnofviewprof"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:id="@+id/myappname"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--
+
+    app:cardCornerRadius="130dp"
+
+    this makes the card from square to circular
+
+
+   -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/setprofusername"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/setuserimagecard"
+        app:cardCornerRadius="130dp"
+        android:layout_marginLeft="80dp">
+
+
+        <!--
+
+         android:scaleType="centerCrop"
+         this will crop and focus image on the center
+
+        -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/setprofuserimage"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your name here"
+        android:layout_centerInParent="true"
+        android:id="@+id/setprofusername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setprofbtn"
+        android:text="Update Profile"
+        android:layout_below="@id/setprofusername"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
